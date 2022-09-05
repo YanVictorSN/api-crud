@@ -1,0 +1,21 @@
+GET http://localhost:8000/usuarios/ HTTP/1.1
+
+
+###
+POST http://localhost:8000/usuarios/ HTTP/1.1
+
+{
+    "name" : "Yan Victor",
+    "email" : "yanvictor13@gmail.com"
+}
+
+###
+PUT http://localhost:8000/usuarios/2 HTTP/1.1
+
+{
+    "name" : "Yan Victor",
+    "email" : "yanvictor13@gmail.com"
+}
+
+###
+DELETE http://localhost:8000/usuarios/2 HTTP/1.1

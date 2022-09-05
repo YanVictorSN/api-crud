@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>API - ALPHA</title>
+</head>
+<body>
+    <header>
+        <h1> FRONT API</h1>
+    </header>
+    <main>
+        <div>
+            <h2>FORMULÁRIO DE CADASTRO DE USUÁRIOS</h2>
+            <p>Para inserir usuários na lista, preencha os dados abaixo.</p>
+        </div>
+        <div>
+            <form action="GET">
+                <div> 
+                    <input type="text" name="" id="name-user" placeholder="Nome Completo".>
+                    <input type="email" name="" id="email-user" placeholder="E-mail">
+                    <input type="button" id="create-user" value="Cadastrar">
+                </div>
+               
+                <div>
+                    <p id="result"></p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <section>
+        <h3>LISTA DE USUÁRIOS CADASTRADOS</h3>
+            <p>Abaixo, você pode ver os usuários registrados, podendo editá-los ou remové-los.</p>
+    </section>
+    <table id="tabela">
+        <thead id="thEdit">
+            <th>#ID</th>
+            <th>NOME</th>
+            <th>E-MAIL</th>
+            <th>EDITAR</th>
+            <th>EXCLUIR</th>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <section id="edit">
+        <div id="edit-content">
+            <h1>Editar</h1>
+            <div id="inputs">
+                <input type="text" name="name" id="name-edit" class="input" placeholder="Novo Nome" />
+                <input type="email" name="email" id="email-edit" class="input"  placeholder="Novo Email"/>
+            </div>
+            <div id="buttons">
+                <div>
+                    <button id="submit2" type="button">Confirmar</button>
+                    <button id="cancel" type="button">Cancelar</button>
+                </div>
+                <p id="result-modal"></p>
+            </div>
+        </div>
+    </section>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
+
+<!-- FORNECE O FRONT END A PARTIR DA API -->
+
+<!-- Callback dou fazer uma promisse -->
